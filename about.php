@@ -5,7 +5,7 @@ include_once "./layout/header.php";
 <section class="container-fluid about-section" id="about_section">
     <div class="site-map">
         <div class="sitemap-page">
-            <img src="assets\img\about\me.png" loading="lazy" alt="page-icon" class="sitemap-image">
+            <img src="assets\img\about\lea2.png" loading="lazy" alt="page-icon" class="sitemap-image">
             <h4 class="sitemap-title">About Me</h4>
         </div>
         <div class="sitemap-info">
