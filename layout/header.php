@@ -66,7 +66,7 @@
 
     </div>
 
-    <div class="collapse navbar-collapse justify-content-end d-md-none" id="mobileNav">
+    <div class="collapse navbar-collapse justify-content-end d-lg-none" id="mobileNav">
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./index">home</a>

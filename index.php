@@ -4,7 +4,7 @@ include_once "./layout/header.php";
 
 <section class="row m-0 home-section" id="home_section">
     <div class="col-md-4 p-0 m-0 about-container d-flex align-items-end justify-content-start clickable" onclick="window.open('./about', '_blank');">
-        <img src="assets\img\home\about.png" alt="" class="about-img" loading="lazy">
+        <img src="assets\img\home\lea.webp" alt="" class="about-img" loading="lazy">
 
         <div class="about-text ms-5 mb-5">
             <h2 class="about-title">about</h2>
