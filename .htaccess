@@ -1,4 +1,3 @@
-
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php82” package as the default “PHP” programming language.
 <IfModule mime_module>
@@ -7,6 +6,12 @@
 # php -- END cPanel-generated handler, do not edit
 
 RewriteEngine On
+
+# Remove 'index' from the URL
+RewriteCond %{THE_REQUEST} \s/+(index\.php)?\s [NC]
+RewriteRule ^(.*)/index\.php$ /$1 [R=301,L]
+
+# Handle clean URLs for non-file/directory requests
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
