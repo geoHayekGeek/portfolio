@@ -8,8 +8,8 @@
 RewriteEngine On
 
 # Remove 'index' from the URL
-RewriteCond %{THE_REQUEST} \s/+(index\.php)?\s [NC]
-RewriteRule ^(.*)/index\.php$ /$1 [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+(index)?\s [NC]
+RewriteRule ^index$ / [R=301,L]
 
 # Handle clean URLs for non-file/directory requests
 RewriteCond %{REQUEST_FILENAME} !-d
