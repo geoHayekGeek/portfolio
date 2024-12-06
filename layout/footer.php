@@ -10,6 +10,7 @@
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="assets/js/navbar.js"></script>
+<script src="assets/js/socials.js"></script>
 </body>
 
 </html>
