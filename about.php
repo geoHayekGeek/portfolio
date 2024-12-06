@@ -38,41 +38,89 @@ include_once "./layout/header.php";
 
     <div class="space-line"></div>
 
+    <div class="skills-block">
+        <h1 class="skills-main-title">Skills</h1>
+        <div class="title-pink-line"></div>
+        <div class="all-skills">
+            <div class="skill-container">
+                <h2 class="skill-title">Content Creation</h2>
+                <div class="skill-description-wrapper">
+                    <div class="skill-description">
+                        Ability to create engaging, relevant, and visually appealing content
+                        for various platforms.
+                    </div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <h2 class="skill-title">Social Media Analytics</h2>
+                <div class="skill-description-wrapper">
+                    <div class="skill-description">
+                        Proficient in using analytics tools to track performance, measure
+                        ROI, and adjust strategies accordingly.
+                    </div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <h2 class="skill-title">Community Managemen</h2>
+                <div class="skill-description-wrapper">
+                    <div class="skill-description">
+                        Skilled in interacting with followers, responding to comments, and managing online communities
+                        to foster brand loyalty.
+                    </div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <h2 class="skill-title">SEO and SEM Knowledge</h2>
+                <div class="skill-description-wrapper">
+                    <div class="skill-description">
+                        Understanding how to optimize content for search engines and use paid media to boost visibility
+                        and engagement.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="space-line"></div>
+
     <div class="awards-block">
-        <h1 class="awards-main-title">Awards</h1>
+        <h1 class="awards-main-title">Achievements</h1>
         <div class="title-pink-line"></div>
         <div class="w-layout-layout awards-grid wf-layout-layout">
             <div class="w-layout-cell award-cell">
                 <div class="award-item">
-                    <h4 class="award-title">BEST DESIGNER</h4>
+                    <h4 class="award-title">Increased Engagement</h4>
                     <p class="award-text">
-                        Top-tier award for exceptional innovation and
-                        creative designs </p>
+                        Boosting likes, shares, and comments.
+                    </p>
                     <div class="award-year">2024</div>
                 </div>
             </div>
             <div class="w-layout-cell award-cell">
                 <div class="award-item">
-                    <h4 class="award-title">ART OF THE WEEK</h4>
+                    <h4 class="award-title">Growth in Followers</h4>
                     <p class="award-text">
-                        Weekly Highlight: Inspiring Artworks for Your
-                        Enjoyment. </p>
+                        Growing followers across platforms.
+                    </p>
                     <div class="award-year">2023</div>
                 </div>
             </div>
             <div class="w-layout-cell award-cell">
                 <div class="award-item">
-                    <h4 class="award-title">CREATIVE POSTER AWARD</h4>
+                    <h4 class="award-title">Successful Brand Campaigns</h4>
                     <p class="award-text">
-                        Creative Poster Excellence: Recognizing Outstanding Artistry. </p>
+                        Running campaigns that raise brand awareness or sales.
+                    </p>
                     <div class="award-year">2022</div>
                 </div>
             </div>
             <div class="w-layout-cell award-cell">
                 <div class="award-item">
-                    <h4 class="award-title">WEBSITE OF THE MONTH</h4>
+                    <h4 class="award-title">Improved Customer Satisfaction</h4>
                     <p class="award-text">
-                        Website Showcase: Honoring Exceptional Online Creativity. </p>
+                        Providing quick and effective customer support.
+                    </p>
                     <div class="award-year">2021</div>
                 </div>
             </div>

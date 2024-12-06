@@ -724,8 +724,100 @@ html {
                             }
                         }
                     }
-
                 }
+
+                .skills-block {
+                    .skills-main-title {
+                        color: var(--color-s);
+                        text-transform: capitalize;
+                        margin-top: 0;
+                        margin-bottom: 30px;
+                        font-size: 50px;
+                        font-weight: 300;
+                        line-height: 50px;
+                    }
+
+                    .all-skills {
+                        margin-top: 30px;
+                        padding: 0;
+                        gap: 10px;
+                        display: flex;
+                        flex-direction: column;
+
+                        .skill-container {
+                            cursor: pointer;
+
+                            &:hover {
+
+                                .skill-title::before {
+                                    width: 100px;
+                                }
+
+                                .skill-description-wrapper {
+                                    .skill-description {
+                                        opacity: 1;
+
+                                        &::before {
+                                            width: 150px;
+                                        }
+                                    }
+
+                                    max-height: 100px;
+                                }
+                            }
+
+                            .skill-title {
+                                margin-bottom: 5px;
+                                color: var(--color-s);
+
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 10px;
+                                    height: 2px;
+                                    background-color: var(--color-pink);
+                                    transform: translateY(-7px);
+                                    transition: all 0.3s ease-out;
+                                }
+                            }
+
+                            .skill-description-wrapper {
+                                position: relative;
+                                max-height: 0;
+                                overflow: hidden;
+                                transition: max-height .6s ease-out;
+
+                                .skill-description {
+                                    opacity: 0;
+                                    transition: opacity 0.3s ease-out;
+                                    color: var(--color-s);
+
+                                    &::before {
+                                        content: "";
+                                        display: inline-block;
+                                        width: 0;
+                                        height: 2px;
+                                        background-color: var(--color-q);
+                                        transform: translateY(-7px);
+                                        transition: all 0.3s ease-out;
+                                    }
+                                }
+                            }
+
+                            /* When hovered, expand the container and make the description visible */
+                            .skill-container:hover .skill-description-wrapper {
+                                max-height: 500px;
+                                /* Allow enough space for content */
+                            }
+
+                            .skill-container:hover .skill-description-wrapper .skill-description {
+                                opacity: 1;
+                                /* Make the description visible */
+                            }
+                        }
+                    }
+                }
+
             }
 
             /** END ABOUT */
