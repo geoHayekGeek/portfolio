@@ -24,7 +24,7 @@ include_once "./layout/header.php";
                     social media expert
                 </div>
             </div>
-            <img src="assets/img/about/about.png" alt="" loading="lazy" class="user-img">
+            <img src="assets/img/about/lea.webp" alt="" loading="lazy" class="user-img">
         </div>
 
         <div class="col-12 col-md-6 text-column">
