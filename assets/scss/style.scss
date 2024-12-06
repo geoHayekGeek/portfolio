@@ -341,7 +341,7 @@ html {
                     border: 3px solid var(--color-s);
                     transition: all .2s ease-in-out;
                     overflow: hidden;
-                    background-color: black;
+                    background-color: var(--color-s);
 
                     @media screen and (max-width: 768px) {
                         height: 50vh;
