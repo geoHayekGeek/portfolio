@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    const currentPage = window.location.pathname.split('/').pop() || 'index';
+    const currentPage = window.location.pathname.split('/').pop() || 'index';  // Default to 'index' if empty
 
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 

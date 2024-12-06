@@ -69,19 +69,19 @@
     <div class="collapse navbar-collapse justify-content-end d-md-none" id="mobileNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.php">home</a>
+                <a class="nav-link" aria-current="page" href="./index">home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./about.php">about</a>
+                <a class="nav-link" href="./about">about</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./work.php">work</a>
+                <a class="nav-link" href="./work">work</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./services.php">services</a>
+                <a class="nav-link" href="./services">services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./contact.php">contact</a>
+                <a class="nav-link" href="./contact">contact</a>
             </li>
         </ul>
     </div>
@@ -89,7 +89,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" style="letter-spacing: 3px; font-size: 30px; font-weight: bolder;"
-                    href="./index.php">LEA</a>
+                    href="./index">LEA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav"
                     aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="custom-toggler custom-toggler-1">
@@ -110,19 +110,19 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.php">home</a>
+                            <a class="nav-link" aria-current="page" href="./index">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.php">about</a>
+                            <a class="nav-link" href="./about">about</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./work.php">work</a>
+                            <a class="nav-link" href="./work">work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./services.php">services</a>
+                            <a class="nav-link" href="./services">services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contact.php">contact</a>
+                            <a class="nav-link" href="./contact">contact</a>
                         </li>
                     </ul>
                 </div>

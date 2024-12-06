@@ -3,7 +3,7 @@ include_once "./layout/header.php";
 ?>
 
 <section class="row m-0 home-section" id="home_section">
-    <div class="col-md-4 p-0 m-0 about-container d-flex align-items-end justify-content-start clickable" onclick="window.open('./about.php', '_blank');">
+    <div class="col-md-4 p-0 m-0 about-container d-flex align-items-end justify-content-start clickable" onclick="window.open('./about', '_blank');">
         <img src="assets\img\home\about.png" alt="" class="about-img" loading="lazy">
 
         <div class="about-text ms-5 mb-5">
@@ -14,7 +14,7 @@ include_once "./layout/header.php";
         </div>
     </div>
     <div class="col-md-8 rest-container">
-        <div class="services-container clickable" onclick="window.open('./services.php', '_blank');">
+        <div class="services-container clickable" onclick="window.open('./services', '_blank');">
             <div class="text-with-dot">
                 <div class="dot-text">elite solutions</div>
             </div>
@@ -35,7 +35,7 @@ include_once "./layout/header.php";
             <h3 class="main-title">services</h3>
         </div>
         <div class="row m-0 work-contact-wrapper">
-            <div class="col-12 col-md-7 work-container clickable" onclick="window.open('./work.php', '_blank');">
+            <div class="col-12 col-md-7 work-container clickable" onclick="window.open('./work', '_blank');">
                 <div class="text-with-dot">
                     <div class="dot-text">inspiring selection</div>
                 </div>
@@ -45,7 +45,7 @@ include_once "./layout/header.php";
                 </div>
                 <h3 class="main-title">work</h3>
             </div>
-            <div class="col-12 col-md-5 contact-container clickable" onclick="window.open('./contact.php', '_blank');">
+            <div class="col-12 col-md-5 contact-container clickable" onclick="window.open('./contact', '_blank');">
                 <div class="text-with-dot">
                     <div class="dot-text">let's talk</div>
                 </div>
