@@ -154,6 +154,12 @@ include_once "./layout/header.php";
             </div>
         </div>
     </div>
+
+    <div class="space-line"></div>
+
+    <?php
+    include_once "./partials/tiktok_section.php";
+    ?>
 </section>
 
 <?php
