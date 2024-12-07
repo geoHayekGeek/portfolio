@@ -889,8 +889,8 @@ html {
                         padding: 0;
 
                         a[href="https://elfsight.com/tiktok-feed-widget/?utm_source=websites&utm_medium=clients&utm_content=tiktok-feed&utm_term=localhost&utm_campaign=free-widget"] {
-                            
-                            display: none!important;
+
+                            display: none !important;
                         }
                     }
                 }
@@ -1054,6 +1054,193 @@ html {
             }
 
             /** END SERVICES */
+
+            /** START WORK */
+            #work_section {
+                @media screen and (min-width: 992px) {
+                    padding: 0;
+                }
+
+                .site-map {
+                    background-color: var(--color-p);
+                    border: 1px solid var(--color-s);
+                    border-radius: 50px;
+                    justify-content: space-between;
+                    margin-bottom: 70px;
+                    padding: 7px 7px 8px;
+                    display: flex;
+
+                    @media screen and (max-width: 479px) {
+                        text-align: left;
+                        border-radius: 10px;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        display: block;
+                    }
+
+                    .sitemap-page {
+                        align-items: center;
+                        display: flex;
+
+                        .sitemap-image {
+                            width: 82px;
+                            height: 82px;
+                            max-width: 100%;
+                            border: 1px solid var(--color-s);
+                            border-radius: 50%;
+                        }
+
+                        .sitemap-title {
+                            color: var(--color-s);
+                            text-transform: uppercase;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 20px;
+                            font-family: var(--font-p);
+                            font-size: 30px;
+                            font-weight: 300;
+                            line-height: 56px;
+                        }
+                    }
+
+                    .sitemap-info {
+                        align-items: center;
+                        margin-right: 40px;
+                        display: flex;
+
+                        .sitemap-text {
+                            color: var(--color-s);
+                            margin-left: 10px;
+                            font-size: 17px;
+                            font-weight: 300;
+
+                            &::before {
+                                content: '';
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background-color: var(--color-pink);
+                                margin-right: 10px;
+                                float: left;
+                                margin-top: 9px;
+                            }
+                        }
+                    }
+                }
+
+                .w-row {
+                    margin-left: -10px;
+                    margin-right: -10px;
+
+                    &::before {
+                        content: " ";
+                        display: table;
+                        grid-column-start: 1;
+                        grid-row-start: 1;
+                        grid-column-end: 2;
+                        grid-row-end: 2;
+                    }
+
+                    .w-col-4 {
+                        width: 33.33333333%;
+                    }
+
+                    .w-col {
+                        position: relative;
+                        float: left;
+                        min-height: 1px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        @media screen and (max-width: 767px) {
+                            width: 100%!important;
+                        }
+                    }
+
+                    .w-inline-block {
+                        max-width: 100%;
+                        display: inline-block;
+                    }
+
+                    .work-item {
+                        &:hover {
+                            .work-image {
+                                transform: scale(1.2) rotate(2deg);
+                                transition: all 0.6s;
+                            }
+                        }
+
+                        .work-item-inner {
+                            position: relative;
+                            overflow: hidden;
+                            max-height: 100%;
+                            border-radius: 20px;
+                            margin-bottom: 40px;
+                            padding: 80px 30px 30px;
+                            display: block;
+                            border: 1px solid #313237;
+                            transition: border-color 0.5s, opacity 0.5s;
+                            text-decoration: none;
+                            background-color: var(--color-p);
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background: linear-gradient(rgba(0, 100, 216, 0), rgb(0 100 216 / 10%));
+                                opacity: 0;
+                                transition: opacity 0.3s;
+                            }
+
+                            &:hover {
+                                border-color: var(--color-pink);
+                                opacity: 0.9;
+
+                                &::before {
+                                    opacity: 1;
+                                }
+                            }
+
+                            .work-title {
+                                color: var(--color-s);
+                                margin-top: 0;
+                                margin-bottom: 5px;
+                                font-size: 22px;
+                                line-height: 26px;
+                                font-family: var(--font-p);
+                                text-decoration: none;
+                            }
+
+                            .work-category {
+                                color: var(--color-pink);
+                                font-size: 18px;
+                                font-weight: 300;
+                                line-height: 19px;
+                                margin-bottom: 30px;
+                            }
+
+                            .image-holder {
+                                width: 100%;
+                                overflow: hidden;
+                                clear: both;
+                                border-radius: 0 0 20px 20px !important;
+
+                                .work-image {
+                                    width: 100%;
+                                    border-radius: 0 0 20px 20px !important;
+                                    transition: all 0.2s;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            /** END WORK */
         }
     }
 }
