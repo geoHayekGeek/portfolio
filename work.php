@@ -11,7 +11,7 @@ include_once "./layout/header.php";
         <div class="sitemap-info">
             <div class="sitemap-text">inspiring selection</div>
         </div>
-    </div>
+    </div>  
 
     <div class="work-wrapper">
         <div class="work-list-wrapper w-dyn-list">

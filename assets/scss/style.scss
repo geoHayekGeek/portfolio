@@ -1054,6 +1054,7 @@ html {
             /** END SERVICES */
 
             /** START WORK */
+
             #work_section {
                 @media screen and (min-width: 992px) {
                     padding: 0;
@@ -1120,7 +1121,7 @@ html {
                                 border-radius: 50%;
                                 background-color: var(--color-pink);
                                 margin-right: 10px;
-                                float: left;
+                                /* float: left; */
                                 margin-top: 9px;
                             }
                         }
@@ -1130,6 +1131,9 @@ html {
                 .w-row {
                     margin-left: -10px;
                     margin-right: -10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
 
                     &::before {
                         content: " ";
@@ -1146,13 +1150,18 @@ html {
 
                     .w-col {
                         position: relative;
-                        float: left;
+                        /* float: left; */
                         min-height: 1px;
                         padding-left: 10px;
                         padding-right: 10px;
+                        /* Adjust for column width minus gap */
+                        box-sizing: border-box;
 
                         @media screen and (max-width: 767px) {
                             width: 100% !important;
+                        }
+                        @media screen and (min-width: 767px) {
+                            flex: 1 1 calc(33.333% - 20px);
                         }
                     }
 
