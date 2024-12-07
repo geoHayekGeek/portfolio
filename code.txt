@@ -1,3 +1,0 @@
-js to redirect on click: 
-onclick="window.open('./about-us', '_blank');"
-
