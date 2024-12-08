@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-
+    /**START NAVBAR CODE */
     const showNavbar = (toggleId, navId, bodyId, headerId) => {
-        console.log('test1')
         const toggle = document.getElementById(toggleId),
             nav = document.getElementById(navId),
             bodypd = document.getElementById(bodyId),
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         // Validate that all variables exist
         if (toggle && nav && bodypd && headerpd) {
-            console.log('test2')
             toggle.addEventListener('click', () => {
                 // show navbar
                 nav.classList.toggle('show')
@@ -36,5 +34,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     linkColor.forEach(l => l.addEventListener('click', colorLink))
 
-    // Your code to run since DOM is loaded and ready
+    /**END NAVBAR CODE */
 });
+
+function toggleArrow(element) {
+    const arrow = element.querySelector('.arrow');
+    if (arrow.classList.contains('bx-chevron-down')) {
+        arrow.classList.remove('bx-chevron-down');
+        arrow.classList.add('bx-chevron-up');
+        element.style.marginBottom = 0;
+    } else {
+        arrow.classList.remove('bx-chevron-up');
+        arrow.classList.add('bx-chevron-down');
+        element.style.marginBottom = "1.5em";
+    }
+}

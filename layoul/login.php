@@ -422,9 +422,9 @@ $csrf_token = generateCSRFToken();
             <button type="submit" class="submit-button">Sign In</button>
         </form>
 
-        <div class="divider">
+        <!-- <div class="divider">
             <span>or continue with</span>
-        </div>
+        </div> -->
 
         <div class="additional-options">
             <a href="#" onclick="handleForgotPassword()">Forgot password?</a>

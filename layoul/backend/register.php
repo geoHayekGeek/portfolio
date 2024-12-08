@@ -4,6 +4,8 @@
 session_start();
 require_once 'db.php';
 require_once 'functions.php';
+$_SESSION['csrf_token'] = "7ee98248402585708a3a86ad7cdb93d4c573615896ca48fcc71de5a315f63f5d";
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Sanitize and validate inputs
