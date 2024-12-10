@@ -1160,6 +1160,7 @@ html {
                         @media screen and (max-width: 767px) {
                             width: 100% !important;
                         }
+
                         @media screen and (min-width: 767px) {
                             flex: 1 1 calc(33.333% - 20px);
                         }
@@ -1186,7 +1187,7 @@ html {
                             margin-bottom: 40px;
                             padding: 80px 30px 30px;
                             display: block;
-                            border: 1px solid #313237;
+                            border: 1px solid var(--color-s);
                             transition: border-color 0.5s, opacity 0.5s;
                             text-decoration: none;
                             background-color: var(--color-p);
@@ -1249,6 +1250,116 @@ html {
             }
 
             /** END WORK */
+
+            /** START SINGLE WORK  */
+
+            #single_work_section {
+                @media screen and (min-width: 992px) {
+                    padding: 0;
+                }
+
+                .site-map {
+                    background-color: var(--color-p);
+                    border: 1px solid var(--color-s);
+                    border-radius: 50px;
+                    justify-content: space-between;
+                    margin-bottom: 70px;
+                    padding: 7px 7px 8px;
+                    display: flex;
+
+                    @media screen and (max-width: 479px) {
+                        text-align: left;
+                        border-radius: 10px;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        display: block;
+                    }
+
+                    .sitemap-page {
+                        align-items: center;
+                        display: flex;
+
+                        .sitemap-image {
+                            width: 82px;
+                            height: 82px;
+                            max-width: 100%;
+                            border: 1px solid var(--color-s);
+                            border-radius: 50%;
+                        }
+
+                        .sitemap-title {
+                            color: var(--color-s);
+                            text-transform: uppercase;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 20px;
+                            font-family: var(--font-p);
+                            font-size: 30px;
+                            font-weight: 300;
+                            line-height: 56px;
+                        }
+                    }
+
+                    .sitemap-info {
+                        align-items: center;
+                        margin-right: 40px;
+                        display: flex;
+
+                        .sitemap-text {
+                            color: var(--color-s);
+                            margin-left: 10px;
+                            font-size: 17px;
+                            font-weight: 300;
+
+                            &::before {
+                                content: '';
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background-color: var(--color-pink);
+                                margin-right: 10px;
+                                /* float: left; */
+                                margin-top: 9px;
+                            }
+                        }
+                    }
+                }
+
+                .single-wrapper {
+                    border: 1px solid var(--color-s);
+                    border-radius: 20px;
+                    padding: 40px;
+                    margin-bottom: 80px;
+                    box-shadow: -5px 5px 11px 3px rgba(0, 0, 0, .2);
+
+                    .single-work-image {
+                        width: 100%;
+                        max-height: 500px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .single-work-title {
+                        margin-top: 30px;
+                        margin-bottom: 0;
+                        font-size: 46px;
+                        font-weight: 600;
+                        line-height: 48px;
+                        font-family: var(--font-p);
+                    }
+
+                    .single-text-style {
+                        font-family: var(--font-p);
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 27px;
+                    }
+                }
+
+            }
+
+            /** END SINGLE WORK  */
         }
     }
 }

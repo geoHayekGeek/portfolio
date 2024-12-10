@@ -23,6 +23,8 @@ include_once "./layout/header.php";
 
             <textarea id="project_description"></textarea>
 
+            <input type="file" class="mt-4" id="project_image" required>
+
             <div class="d-flex justify-content-center mt-4">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>

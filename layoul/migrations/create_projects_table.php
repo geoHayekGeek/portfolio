@@ -6,6 +6,7 @@ $sql = "CREATE TABLE IF NOT EXISTS projects (
     name VARCHAR(255) NOT NULL UNIQUE,
     service_category VARCHAR(100) NOT NULL,
     content LONGTEXT NOT NULL,
+    image TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )";
 
