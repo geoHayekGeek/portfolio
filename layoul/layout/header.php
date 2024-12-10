@@ -54,7 +54,7 @@ include_once "./backend/admin.php";
                     </div>
                     <div class="collapse" id="projects">
                         <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action">All Projects</a>
+                            <a href="./projects.php" class="list-group-item list-group-item-action">All Projects</a>
                             <a href="./add-project" class="list-group-item list-group-item-action">Add Project</a>
                         </div>
                     </div>

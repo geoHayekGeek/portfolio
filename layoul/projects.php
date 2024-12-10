@@ -24,8 +24,8 @@ include_once "./layout/header.php";
     data-show-fullscreen="true" data-show-columns="true" data-show-columns-toggle-all="true" data-detail-view="true"
     data-show-export="true" data-click-to-select="true" data-detail-formatter="detailFormatter"
     data-minimum-count-columns="2" data-show-pagination-switch="true" data-pagination="true" data-id-field="id"
-    data-page-list="[10, 25, 50, 100, all]" data-side-pagination="server"
-    data-url="https://examples.wenzhixin.net.cn/examples/bootstrap_table/data" data-response-handler="responseHandler">
+    data-page-list="[10, 25, 50, 100, all]"
+    data-url="./backend/projects/fetch-projects.php" data-response-handler="responseHandler">
 </table>
 
 <script>
@@ -54,27 +54,15 @@ include_once "./layout/header.php";
         return html.join('')
     }
 
-    function operateFormatter(value, row, index) {
+    function operateFormatter(id) {
         return [
-            '<a class="edit me-4" href="javascript:void(0)" title="Edit">',
+            `<a class="edit me-4" href="${id}" title="Edit">`,
             '<i class="fa fa-pen"></i>',
             '</a>  ',
-            '<a class="remove" href="javascript:void(0)" title="Remove">',
+            `<a class="remove" href="${id}" title="Remove">`,
             '<i class="fa fa-trash"></i>',
             '</a>'
         ].join('')
-    }
-
-    window.operateEvents = {
-        'click .like': function (e, value, row, index) {
-            alert('You click like action, row: ' + JSON.stringify(row))
-        },
-        'click .remove': function (e, value, row, index) {
-            $table.bootstrapTable('remove', {
-                field: 'id',
-                values: [row.id]
-            })
-        }
     }
 
     function totalTextFormatter(data) {
@@ -95,77 +83,43 @@ include_once "./layout/header.php";
     }
 
     function initTable() {
-        $table.bootstrapTable('destroy').bootstrapTable({
-            height: 550,
-            locale: 'en-US',
-            columns: [
-                [
-                    {
-                        field: 'state',
-                        checkbox: true,
-                        rowspan: 2,
-                        align: 'center',
-                        valign: 'middle'
-                    },
-                    {
-                        title: 'Item ID',
-                        field: 'id',
-                        rowspan: 2,
-                        align: 'center',
-                        valign: 'middle',
-                        sortable: true,
-                    },
-                    {
-                        title: 'Item Detail',
-                        colspan: 3,
-                        align: 'center'
+    $table.bootstrapTable('destroy').bootstrapTable({
+        height: 550,
+        locale: 'en-US',
+        columns: [
+            [
+                {
+                    title: 'Name',
+                    field: 'name',
+                    align: 'center'
+                },
+                {
+                    title: 'Image',
+                    field: 'image',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        return `<img src="${value}" alt="${row.name}" style="width:50px;height:auto;">`;
                     }
-                ],
-                [
-                    {
-                        field: 'name',
-                        title: 'Item Name',
-                        sortable: true,
-                        align: 'center'
-                    },
-                    {
-                        field: 'price',
-                        title: 'Item Price',
-                        sortable: true,
-                        align: 'center',
-                    },
-                    {
-                        field: 'operate',
-                        title: 'Item Operate',
-                        align: 'center',
-                        clickToSelect: false,
-                        events: window.operateEvents,
-                        formatter: operateFormatter
+                },
+                {
+                    title: 'Category',
+                    field: 'category',
+                    align: 'center'
+                },
+                {
+                    field: 'id',
+                    title: 'Actions',
+                    align: 'center',
+                    clickToSelect: false,
+                    formatter: function (value, row, index) {
+                        return operateFormatter(value)
                     }
-                ]
+                }
             ]
-        })
-        $table.on('check.bs.table uncheck.bs.table ' +
-            'check-all.bs.table uncheck-all.bs.table',
-            function () {
-                $remove.prop('disabled', !$table.bootstrapTable('getSelections').length)
+        ],
+    });
+}
 
-                // save your data, here just save the current page
-                selections = getIdSelections()
-                // push or splice the selections if you want to save all data selections
-            })
-        $table.on('all.bs.table', function (e, name, args) {
-            console.log(name, args)
-        })
-        $remove.click(function () {
-            var ids = getIdSelections()
-            $table.bootstrapTable('remove', {
-                field: 'id',
-                values: ids
-            })
-            $remove.prop('disabled', true)
-        })
-    }
 
     $(function () {
         initTable()
