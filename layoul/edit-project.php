@@ -2,11 +2,11 @@
 include_once "./layout/header.php";
 ?>
 
-<h1 class="mb-4">Add Project</h1>
+<h1 class="mb-4">Edit Project</h1>
 
 <div class="row w-100 justify-content-center pb-5">
     <div class="col-12 col-md-9 col-lg-6">
-        <form id="addProject">
+        <form id="editProjectBtn">
             <div class="row mb-4">
                 <div class="col-md">
                     <label for="project_title">Title</label>
@@ -26,7 +26,7 @@ include_once "./layout/header.php";
             <input type="file" class="mt-4" id="project_image" required>
 
             <div class="d-flex justify-content-center mt-4">
-                <button type="submit" id="addProjectBtn" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
     </div>

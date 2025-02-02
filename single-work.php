@@ -6,17 +6,17 @@ include_once "./layout/header.php";
     <div class="site-map">
         <div class="sitemap-page">
             <img src="assets\img\work\sitemap_single.png" loading="lazy" alt="page-icon" class="sitemap-image">
-            <h4 class="sitemap-title">My Work</h4>
+            <h4 class="sitemap-title"></h4>
         </div>
         <div class="sitemap-info">
-            <div class="sitemap-text">inspiring selection</div>
+            <div class="sitemap-text"></div>
         </div>
     </div>
 
     <div class="single-wrapper">
         <img alt="Essence" loading="lazy"
-            src="https://themeguri.com/gridos/wp-content/uploads/sites/2/2024/01/work1.jpg" class="single-work-image">
-        <h2 class="single-work-title mb-1">Elixir</h2>
+            src="" class="single-work-image">
+        <h2 class="single-work-title mb-1"></h2>
         <div class="single-text-style">
         </div>
 

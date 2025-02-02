@@ -1,5 +1,7 @@
 <?php
 include_once "./backend/admin.php";
+// include_once "./migrations/create_projects_table.php";
+// include_once "./migrations/create_user_table.php";
 ?>
 
 <!DOCTYPE html>

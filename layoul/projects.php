@@ -56,10 +56,10 @@ include_once "./layout/header.php";
 
     function operateFormatter(id) {
         return [
-            `<a class="edit me-4" href="${id}" title="Edit">`,
+            `<a class="edit me-4" target="_blank" href="./edit-project.php?id=${id}" title="Edit">`,
             '<i class="fa fa-pen"></i>',
             '</a>  ',
-            `<a class="remove" href="${id}" title="Remove">`,
+            `<a class="remove" href="javascript:void(0);" onclick="window.location.href='./backend/projects/delete-project.php?id=${id}';"  title="Remove">`,
             '<i class="fa fa-trash"></i>',
             '</a>'
         ].join('')

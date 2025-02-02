@@ -1,5 +1,5 @@
 <?php
-require '../backend/db.php';
+require './backend/db.php';
 
 $sql = "CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
