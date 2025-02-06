@@ -61,7 +61,7 @@ include_once "./layout/header.php";
                 </div>
             </div>
             <div class="skill-container">
-                <h2 class="skill-title">Community Managemen</h2>
+                <h2 class="skill-title">Community Management</h2>
                 <div class="skill-description-wrapper">
                     <div class="skill-description">
                         Skilled in interacting with followers, responding to comments, and managing online communities

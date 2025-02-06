@@ -69,19 +69,19 @@
     <div class="collapse navbar-collapse justify-content-end d-lg-none" id="mobileNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index">home</a>
+                <a class="nav-link" aria-current="page" href="./index"><h5>home</h5></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./about">about</a>
+                <a class="nav-link" href="./about"><h5>about</h5></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./work">work</a>
+                <a class="nav-link" href="./work"><h5>work</h5></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./services">services</a>
+                <a class="nav-link" href="./services"><h5>services</h5></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./contact">contact</a>
+                <a class="nav-link" href="./contact"><h5>contact</h5></a>
             </li>
         </ul>
     </div>
