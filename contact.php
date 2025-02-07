@@ -13,7 +13,7 @@ include_once "./layout/header.php";
         </div>
     </div>
 
-    <div class="row">
+    <div class="row contact-main-wrapper">
         <div class="contact-form-wrapper col-md-8">
             <h3 class="contact-form-title">Say Hello!</h3>
             <div class="contact-form-container">
@@ -40,7 +40,7 @@ include_once "./layout/header.php";
             </div>
         </div>
 
-        <div class="contact-info-wrapper col-md-3">
+        <div class="contact-info-wrapper col-md-4 mt-3 mt-md-0">
             <div class="email-wrapper">
                 <h4 class="email-title">Email</h4>
                 <a target="_blank" href="mailto:hello@lea.social" class="email-link">

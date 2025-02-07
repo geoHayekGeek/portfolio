@@ -1,6 +1,6 @@
 <?php
 include_once "./layout/header.php";
-include_once "./partials/promotion_popup.php";
+// include_once "./partials/promotion_popup.php";
 ?>
 
 <section class="row m-0 home-section" id="home_section">
